@@ -1,0 +1,73 @@
+
+---Downloaded files---
+The import files for: Demo Import 1 were successfully downloaded!
+Initial max execution time = 30
+Files info:
+Site URL = http://localhost:666/wordpress
+Data file = /Applications/MAMP/htdocs/wordpress/wp-content/themes/mountainview/assets/demo-data/mountainview.xml
+Widget file = /Applications/MAMP/htdocs/wordpress/wp-content/themes/mountainview/assets/demo-data/mountainview-widgets.wie
+Customizer file = not defined!
+Redux files:
+not defined!
+
+------
+New AJAX call!
+[ERROR] Failed to import "mountainview_logo" (Media)
+
+
+------
+New AJAX call!
+[ERROR] Failed to import "mountainview_logo" (Media)
+
+
+---Importing widgets---
+Sidebar : 
+
+Search Availability - No Title - Imported
+Gallery - Gallery - Imported
+Text - Weather Forecast - Imported
+Navigation Menu - Special Offers - Imported
+Recent Posts - No Title - Widget already exists
+Video - No Title - Imported
+
+Blog Sidebar : 
+
+Search Availability - No Title - Imported
+Recent Posts - No Title - Imported
+Gallery - No Title - Imported
+Categories - No Title - Imported
+Tag Cloud - No Title - Imported
+Search - No Title - Imported
+
+Footer 1 : 
+
+Navigation Menu - Cabin Rooms - Imported
+
+Footer 2 : 
+
+Navigation Menu - Activities - Imported
+
+Footer 3 : 
+
+Navigation Menu - Events - Imported
+
+Footer 4 : 
+
+Navigation Menu - On The Water - Imported
+
+Front Page Footer Top : 
+
+Text - No Title - Imported
+
+Front Page Footer Left : 
+
+Text - Overview - Imported
+
+Front Page Footer Right : 
+
+Text - House Rules - Imported
+
+
+
+---pt-ocdi/after_import---
+
