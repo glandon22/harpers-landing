@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="16px" viewBox="0 0 14 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
+    <title>calendar_hover</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-126.000000, -60.000000)" fill="#292929">
+            <path d="M138,72 L136,72 L136,74 L137,74 C137.552,74 138,73.553 138,73 L138,72 Z M136,70 L138,70 L138,68 L136,68 L136,70 Z M138,65 C138,64.448 137.552,64 137,64 L129,64 C128.448,64 128,64.448 128,65 L128,66 C128,66 131,66 130.936,65.993 C130.696,65.965 137.955,65.995 138,66 L138,65 Z M128,70 L130,70 L130,68 L128,68 L128,70 Z M128,73 C128,73.553 128.448,74 129,74 L130,74 L130,72 L128,72 L128,73 Z M132,70 L134,70 L134,68 L132,68 L132,70 Z M132,74 L134,74 L134,72 L132,72 L132,74 Z M138,76 L128,76 C126.895,76 126,75.105 126,74 L126,64 C126,62.895 126.895,62 128,62 L129,62 L129,60 L131,60 L131,62 L135,62 L135,60 L137,60 L137,62 L138,62 C139.105,62 140,62.895 140,64 L140,74 C140,75.105 139.105,76 138,76 L138,76 Z" id="calendar_hover"></path>
+        </g>
+    </g>
+</svg>

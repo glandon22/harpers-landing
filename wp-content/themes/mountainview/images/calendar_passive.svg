@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="16px" viewBox="0 0 14 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
+    <title>calendar_passive</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-62.000000, -60.000000)" fill="#9F9F9F">
+            <path d="M74,72 L72,72 L72,74 L73,74 C73.552,74 74,73.553 74,73 L74,72 Z M72,70 L74,70 L74,68 L72,68 L72,70 Z M74,65 C74,64.448 73.552,64 73,64 L65,64 C64.448,64 64,64.448 64,65 L64,66 C64,66 67,66 66.936,65.993 C66.696,65.965 73.955,65.995 74,66 L74,65 Z M64,70 L66,70 L66,68 L64,68 L64,70 Z M64,73 C64,73.553 64.448,74 65,74 L66,74 L66,72 L64,72 L64,73 Z M68,70 L70,70 L70,68 L68,68 L68,70 Z M68,74 L70,74 L70,72 L68,72 L68,74 Z M74,76 L64,76 C62.895,76 62,75.105 62,74 L62,64 C62,62.895 62.895,62 64,62 L65,62 L65,60 L67,60 L67,62 L71,62 L71,60 L73,60 L73,62 L74,62 C75.105,62 76,62.895 76,64 L76,74 C76,75.105 75.105,76 74,76 L74,76 Z" id="calendar_passive"></path>
+        </g>
+    </g>
+</svg>

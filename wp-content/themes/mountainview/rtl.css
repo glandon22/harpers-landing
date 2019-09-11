@@ -1,0 +1,407 @@
+@charset "UTF-8";
+/*!
+Theme Name: Mountainview
+
+Adding support for languages written in a Right To Left (RTL) direction is easy -
+it's just a matter of overwriting all the horizontal positioning attributes
+of your CSS stylesheet in a separate stylesheet file named rtl.css.
+
+https://codex.wordpress.org/Right-to-Left_Language_Support
+
+*/
+.hidden {
+  display: none;
+}
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Reset
+# Accessibility
+# Typography
+# Forms
+# Navigation
+  ## Menus
+  ## Navigation
+  ## Menu icons
+# Widgets
+# Content
+  ## Header
+  ## Posts and pages
+  ## Comments
+# Home page widget .widget_mphb_search_availability_widget
+# Booking form
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Reset
+--------------------------------------------------------------*/
+body {
+  direction: rtl;
+  unicode-bidi: embed;
+}
+
+th {
+  text-align: right;
+}
+
+/*--------------------------------------------------------------
+## Accessibility
+--------------------------------------------------------------*/
+.screen-reader-text:focus {
+  left: auto;
+  right: 5px;
+}
+
+/*--------------------------------------------------------------
+## Typography
+--------------------------------------------------------------*/
+caption, th, td {
+  text-align: right;
+}
+
+@media screen and (min-width: 768px) {
+  ul, ol {
+    margin: 0 1.25em 1rem 0;
+  }
+  li > ul, li > ol {
+    margin-left: 0;
+    margin-right: 1.25em;
+  }
+}
+
+ul, ol {
+  padding: 0 1em 0 0;
+}
+
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+select {
+  background-position: left 1.43em top 1.5em;
+}
+
+input[type="radio"], input[type="checkbox"] {
+  margin: 0 0 0.3em 1.1em;
+}
+
+.search-form label {
+  float: right;
+  padding-left: 10px;
+  padding-right: 0;
+}
+
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Menus
+--------------------------------------------------------------*/
+@media (min-width: 992px) {
+  .header-menus {
+    float: left;
+  }
+}
+
+.menu-toggle i {
+  margin-left: .5em;
+}
+
+.site-branding {
+  left: auto;
+  right: 0;
+}
+
+@media screen and (min-width: 992px) {
+  .top-navigation li,
+  .top-navigation-right li,
+  .main-navigation li {
+    float: right;
+  }
+}
+
+.top-navigation .sub-menu .menu-item-has-children > a:after, .top-navigation-right .sub-menu .menu-item-has-children > a:after, .main-navigation .sub-menu .menu-item-has-children > a:after {
+  content: "";
+  float: left;
+}
+
+.top-navigation .menu-item-has-children .dropdown-toggle, .top-navigation-right .menu-item-has-children .dropdown-toggle, .main-navigation .menu-item-has-children .dropdown-toggle {
+  right: auto;
+  left: 0;
+}
+
+.footer-navigation .menu-item-has-children a, .top-navigation .menu-item-has-children a, .top-navigation-right .menu-item-has-children a, .main-navigation .menu-item-has-children a {
+  margin-right: 0;
+  margin-left: 4em;
+}
+
+@media screen and (min-width: 992px) {
+  .footer-navigation .menu-item-has-children a, .top-navigation .menu-item-has-children a, .top-navigation-right .menu-item-has-children a, .main-navigation .menu-item-has-children a {
+    margin-left: 0;
+  }
+  .footer-navigation ul ul li:hover > ul, .footer-navigation ul ul li.focus > ul, .top-navigation ul ul li:hover > ul, .top-navigation ul ul li.focus > ul, .top-navigation-right ul ul li:hover > ul, .top-navigation-right ul ul li.focus > ul, .main-navigation ul ul li:hover > ul, .main-navigation ul ul li.focus > ul {
+    left: -100%;
+    right: 100%;
+  }
+}
+
+/*--------------------------------------------------------------
+## Navigation
+--------------------------------------------------------------*/
+.pagination .page-numbers {
+  float: right;
+}
+
+.comment-navigation .nav-next, .posts-navigation .nav-next, .post-navigation .nav-next {
+  float: left;
+  text-align: left;
+}
+
+.comment-navigation .nav-previous, .posts-navigation .nav-previous, .post-navigation .nav-previous {
+  float: right;
+}
+
+/*--------------------------------------------------------------
+## Menu icons
+--------------------------------------------------------------*/
+.theme-social-menu a[href*="twitter.com"]:before, .theme-social-menu a[href*="facebook.com"]:before, .theme-social-menu a[href*="plus.google.com"]:before, .theme-social-menu a[href*="pinterest.com"]:before, .theme-social-menu a[href*="foursquare.com"]:before, .theme-social-menu a[href*="yahoo.com"]:before, .theme-social-menu a[href*="skype:"]:before, .theme-social-menu a[href*="yelp.com"]:before, .theme-social-menu a[href*="linkedin.com"]:before, .theme-social-menu a[href*="viadeo.com"]:before, .theme-social-menu a[href*="xing.com"]:before, .theme-social-menu a[href*="soundcloud.com"]:before, .theme-social-menu a[href*="spotify.com"]:before, .theme-social-menu a[href*="last.fm"]:before, .theme-social-menu a[href*="youtube.com"]:before, .theme-social-menu a[href*="vimeo.com"]:before, .theme-social-menu a[href*="vine.com"]:before, .theme-social-menu a[href*="flickr.com"]:before, .theme-social-menu a[href*="500px.com"]:before, .theme-social-menu a[href*="instagram.com"]:before, .theme-social-menu a[href*="wordpress.com"]:before, .theme-social-menu a[href*="wordpress.org"]:before, .theme-social-menu a[href*="tumblr.com"]:before, .theme-social-menu a[href*="reddit.com"]:before, .theme-social-menu a[href*="dribbble.com"]:before, .theme-social-menu a[href*="stumbleupon.com"]:before, .theme-social-menu a[href*="digg.com"]:before, .theme-social-menu a[href*="behance.net"]:before, .theme-social-menu a[href*="delicious.com"]:before, .theme-social-menu a[href*="deviantart.com"]:before, .theme-social-menu a[href*="play.com"]:before, .theme-social-menu a[href*="wikipedia.com"]:before, .theme-social-menu a[href*="apple.com"]:before, .theme-social-menu a[href*="github.com"]:before, .theme-social-menu a[href*="github.io"]:before, .theme-social-menu a[href*="windows.com"]:before, .theme-social-menu a[href*="tripadvisor."]:before, .theme-social-menu a[href*="slideshare.net"]:before, .theme-social-menu a[href*=".rss"]:before, .theme-social-menu a[href*="vk.com"]:before {
+  margin-left: 0;
+}
+
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+.widget.widget_calendar tfoot #next {
+  text-align: left;
+}
+
+.tags-title {
+  margin-right: 0;
+  margin-left: 0.4em;
+}
+
+.search-form .search-controls label {
+  float: none;
+}
+
+.search-form .search-controls button {
+  left: 0;
+  right: auto;
+}
+
+.search-form .search-controls input {
+  padding-left: 60px;
+  padding-right: 1.5rem;
+}
+
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Header
+--------------------------------------------------------------*/
+@media screen and (min-width: 992px) {
+  .site-branding {
+    text-align: right;
+  }
+}
+
+.site-branding .custom-logo-link {
+  margin: 0 0 0 1.3em;
+}
+
+@media screen and (min-width: 992px) {
+  .site-logo-wrapper {
+    margin-left: 1.3em;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .top-navigation {
+    margin: 0.071em 0 0.5em auto;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .top-navigation-right,
+  .site-header-menu {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 auto;
+    flex: 1 auto;
+  }
+}
+
+.footer-navigation a:before,
+.site-header a:before {
+  margin-right: 0;
+  margin-left: 0.438em;
+}
+
+/*--------------------------------------------------------------
+## Posts and pages
+--------------------------------------------------------------*/
+.last-news .entry-title {
+  text-align: right;
+}
+
+body.search .site-main .entry-title, body.archive .site-main .entry-title, body.blog .site-main .entry-title {
+  text-align: right;
+}
+
+@media screen and (min-width: 768px) {
+  body.search .site-main .entry-footer, body.archive .site-main .entry-footer, body.blog .site-main .entry-footer {
+    float: right;
+    text-align: left;
+  }
+  body.search .site-main .entry-wrapper, body.archive .site-main .entry-wrapper, body.blog .site-main .entry-wrapper {
+    padding-left: 0;
+    padding-right: 2.5em;
+    float: left;
+  }
+}
+
+/*--------------------------------------------------------------
+## Comments
+--------------------------------------------------------------*/
+.comment-author .avatar {
+  float: right;
+  margin: 0.45em 0 1.2em 1.2em;
+}
+
+.comment-list .children > li, .reply, .comment-content {
+  margin-left: 0;
+  padding-left: 0;
+  margin-right: 60px;
+  padding-right: 1.2em;
+}
+
+/*--------------------------------------------------------------
+# Home page widget .widget_mphb_search_availability_widget
+--------------------------------------------------------------*/
+@media screen and (min-width: 768px) {
+  .homepage-widget-area .widget_mphb_search_availability_widget input[type='text'].mphb-datepick.is-datepick, .homepage-widget-area .widget_mphb_search_availability_widget select {
+    background-position: left 1.43em top 1.2em !important;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .homepage-widget-area .widget_mphb_search_availability_widget select,
+  .homepage-widget-area .widget_mphb_search_availability_widget input[type="text"] {
+    padding: 0.6em 1em 0.8em 2em !important;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .homepage-widget-area .widget_mphb_search_availability_widget form p {
+    padding: 1.25em 0 0 1.25em !important;
+  }
+}
+
+.homepage-widget-area .widget_mphb_search_availability_widget form p:last-of-type {
+  padding-left: 0 !important;
+}
+
+/*--------------------------------------------------------------
+# Booking form
+--------------------------------------------------------------*/
+input[type='text'].mphb-datepick.is-datepick {
+  padding-right: 0.6em !important;
+  padding-left: 1.7em !important;
+  background-position: left 1.43em top 1.2em !important;
+}
+
+.widget .mphb_widget_search-adults, .widget .mphb_widget_search-children {
+  float: right !important;
+}
+
+@media (min-width: 768px) {
+  .widget .mphb_widget_search-adults {
+    padding-right: 0 !important;
+    padding-left: 0.714em;
+  }
+}
+
+@media (min-width: 768px) {
+  .widget .mphb_widget_search-children {
+    padding-left: 0 !important;
+    padding-right: 0.714em;
+  }
+}
+
+.mphb_sc_search_results-wrapper .mphb-room-type-title, .mphb_sc_rooms-wrapper .mphb-room-type-title, .mphb_sc_room-wrapper .mphb-room-type-title {
+  text-align: left !important;
+}
+
+.mphb-loop-room-type-attributes li:before, .mphb-single-room-type-attributes li:before {
+  margin-right: 0 !important;
+  margin-left: 1em !important;
+}
+
+.mphb-booking-form .mphb-adults-wrapper, .mphb-booking-form .mphb-check-children-date-wrapper {
+  float: right !important;
+}
+
+.mphb-booking-form .mphb-adults-wrapper {
+  padding-right: 0 !important;
+  padding-left: 0.625em !important;
+}
+
+.mphb-booking-form .mphb-check-children-date-wrapper {
+  padding-right: 0.625em !important;
+  padding-left: 0em !important;
+}
+
+body .mphb_sc_search_results-wrapper .mphb-room-type-title, body .mphb_sc_rooms-wrapper .mphb-room-type-title, body .mphb_sc_room-wrapper .mphb-room-type-title {
+  text-align: right !important;
+}
+
+body.archive .site-main .jetpack-testimonial .post-thumbnail {
+  right: 1.875em;
+}
+
+@media (min-width: 768px) {
+  body.archive .site-main .jetpack-testimonial {
+    padding: 1.875em 10.9375em 1.875em 1.875em;
+    text-align: left;
+  }
+  body.archive .site-main .jetpack-testimonial .entry-wrapper {
+    padding-right: 0;
+    padding-left: 2.5em;
+  }
+}
+
+.flex-viewport, .flex-direction-nav {
+  direction: ltr;
+}
+
+@media (min-width: 992px) {
+  body.page-template-template-front-page .header-image .page-heading-wrapper .page-heading,
+  body.page-template-template-grid-page .header-image .page-heading-wrapper .page-heading,
+  body.blog .header-image .page-heading-wrapper .page-heading,
+  body.archive .header-image .page-heading-wrapper .page-heading {
+    float: left;
+  }
+}
+
+body.page-template-template-front-page .content-area,
+body.page-template-template-grid-page .content-area,
+body.blog .content-area,
+body.archive .content-area {
+  float: left;
+}
+
+body.page-template-template-front-page .widget-area,
+body.page-template-template-grid-page .widget-area,
+body.blog .widget-area,
+body.archive .widget-area {
+  float: right;
+}
+
+.post-author .author-avatar {
+  float: right;
+  margin-left: 30px;
+  margin-right: 0;
+}
+
+.post-author .author-bio, .post-author .author-heading {
+  float: left;
+}
